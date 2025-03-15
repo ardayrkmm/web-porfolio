@@ -1,0 +1,134 @@
+
+.Navbar {
+    height: 99px;
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    padding: 10px 50px;
+    align-items: center;
+    position: relative;
+}
+
+
+.Logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #3674B5;
+}
+
+
+.btn-contact {
+    width: 168px;
+    height: 50px;
+    color: white;
+    background-color: #3674B5;
+    border-radius: 30px;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-contact h1 {
+    font-size: 18px;
+    text-align: center;
+}
+
+.btn-contact:hover {
+    width: 170px;
+    height: 52px;
+}
+
+/* Nav Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.nav-links a {
+    color: #3673b57a;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 5px; 
+}
+
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 8px;  
+    height: 8px;  
+    background-color: transparent;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+.nav-links a.active::after {
+    background-color: #3674B5; 
+    
+}
+.nav-links a.active {
+    color: #3674B5 !important; 
+    font-weight: bold;
+}
+.nav-links a:hover,
+.nav-links a:active {
+    color: #3674B5;
+    font-weight: bold;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #3674B5;  
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        z-index: 10;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        background: #3674B5;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+    
+    .nav-links li {
+        padding: 10px 0;
+    }
+
+    .nav-links a {
+        color: white;
+        font-size: 18px;
+    }
+    .btn-contact {
+        display: none;
+       
+    }
+   
+}
