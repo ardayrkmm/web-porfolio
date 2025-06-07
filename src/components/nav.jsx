@@ -4,7 +4,7 @@ import "../assets/css/nav.css";
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const location = useLocation(); // Ambil lokasi saat ini
+  const location = useLocation();
 
   return (
     <div className="Navbar">
@@ -17,14 +17,7 @@ const Nav = () => {
               Home
             </Link>
           </li>
-          <li>
-            <Link
-              to="/about"
-              className={location.pathname === "/about" ? "active" : ""}
-            >
-              About
-            </Link>
-          </li>
+
           <li>
             <Link
               to="/project"
@@ -35,9 +28,16 @@ const Nav = () => {
           </li>
         </ul>
       </div>
-      <div className="btn-contact">
-        <h1>Contact Me</h1>
-      </div>
+      <a
+        href="https://wa.me/6285951545918"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="a-contact"
+      >
+        <div className="btn-contact">
+          <h1>Contact Me</h1>
+        </div>
+      </a>
       <button className="menu-toggle" onClick={() => setIsOpen(!isOpen)}>
         ☰
       </button>

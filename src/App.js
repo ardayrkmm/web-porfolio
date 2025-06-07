@@ -1,20 +1,24 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Layout from "./components/Layout"; // Layout yang sudah kita buat
 import Home from "./pages/Home";
-import About from "./pages/About";
+
 import Project from "./pages/Project";
 import Details from "./pages/DetailProject";
-import Nav from "./components/nav";
+import "./assets/css/App.css"
+
 function App() {
   return (
     <Router>
-      <Nav />
       <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/project" element={<Project />}></Route>
-        <Route path="/about" element={<About />}></Route>
-        <Route path="/project/details" element={<Details />}></Route>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="project" element={<Project />} />
+
+          <Route path="/project/:id" element={<Details />} />
+        </Route>
       </Routes>
     </Router>
   );
 }
+
 export default App;

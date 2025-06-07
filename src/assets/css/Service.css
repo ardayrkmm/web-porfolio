@@ -1,0 +1,136 @@
+.ContainerService {
+    width: 100%;
+    height: auto;
+    background-color: #3674B5;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+  }
+  
+  .bagianTextS {
+    margin: auto;
+    display: flex;
+    text-align: center;
+    margin-bottom: 18px;
+    flex-direction: column;
+  }
+  
+  .bagianTextS h1 {
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .bagianTextS p {
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+  }
+  
+  .bagianCardService {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+  
+  .CardService {
+    width: 280px;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 31px;
+    border-radius: 50px;
+    color: #3b34346f;
+    background-color: #ffffff;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+  }
+  
+  .CardService:hover {
+    background-color: white;
+    color: #3B3434;
+    opacity: 1;
+  }
+  
+  .contentImgS {
+    width: 80px;
+    height: 80px;
+    border-radius: 20000px;
+    background-color: #3673b584;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 17px;
+  }
+  
+  .imgContent {
+    width: 60px;
+    height: 60px;
+    margin: auto;
+  }
+  
+  .CardService h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #3B3434;
+    margin-bottom: 10px;
+  }
+  
+  .CardService p {
+    font-size: 16px;
+    text-align: center;
+    color: #3B3434;
+  }
+  
+  /* ========== RESPONSIVE ========== */
+  @media (max-width: 768px) {
+    .ContainerService {
+      padding: 15px;
+    }
+  
+    .bagianTextS h1 {
+      font-size: 24px;
+    }
+  
+    .bagianTextS p {
+      font-size: 16px;
+    }
+  
+    .bagianCardService {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    .CardService {
+      width: 100%;
+      max-width: 320px;
+      height: auto;
+      padding: 25px;
+      border-radius: 30px;
+    }
+  
+    .CardService h2 {
+      font-size: 20px;
+    }
+  
+    .CardService p {
+      font-size: 14px;
+    }
+  
+    .imgContent {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .contentImgS {
+      width: 65px;
+      height: 65px;
+    }
+  }
+  

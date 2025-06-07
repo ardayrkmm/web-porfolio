@@ -1,0 +1,391 @@
+.ContainerAbout{
+    width: 100vw; 
+    min-height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 auto !important;
+    box-sizing: border-box;
+}
+
+.bagianHeaderAbout{
+    width: 100vw;
+    height: 250px;
+    padding: 20px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.bagianHeaderAbout h1{
+font-size: 40px;
+font-weight: 700;
+margin-bottom: 20px;
+color: #3674B5;
+text-align: center;
+}
+
+.bagianHeaderAbout p{
+    font-size: 24px;
+    font-weight: 400;
+    color: black;
+    text-align: center;
+
+}
+
+.ilHeaderAb{
+    background-color: #3674B5;
+    width: 400px;
+    align-self: center;
+    margin-left: 120px;
+    height: 15px;
+    float: right;
+}
+
+
+.bagianTengahAbout{
+    width: 100vw;
+    height: 650px;
+    background-color: #3674B5;
+    padding: 80px 50px;
+    display: flex;
+   
+}
+
+.imgAbout{
+    width: 50%;
+    height: 500px;
+    border-radius: 40px;
+    background-color: aliceblue;
+    margin-right: 30px;
+
+}
+.bagianTextAbout{
+    width: 50%;
+    height: 400px;
+}
+
+.bagianTextAbout h2{
+    font-size: 36px;
+    font-weight: 600;
+    color: white;
+}
+.bagianTextAbout p{ font-size: 20px; color:white;}
+
+.bagianListAbout{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.isiListAbout{
+    display: flex;
+    margin-bottom: 20px;
+    flex: 0 0 48%;
+    flex-direction: row;
+    align-items: center;
+
+}
+.iconList{width: 20px; height: 20px; background-color: white; margin-right: 18px;  border-radius: 100000px; }
+
+.isiListAbout h3{
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.isiListAbout span{ font-weight: 600;}
+
+.bagianTextAbout h4{
+ font-size: 20px;
+ color: white;
+ font-weight: 400;
+}
+
+/*bagian bottom*/
+.bagianBottomHeader{
+    width: 1200px;
+   
+    
+    padding: 50px;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+}
+
+.bagianBottomHeader h1{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.il2about{
+    background-color: #3674B5;
+    width: 200px;
+    align-self: center;
+    height: 15px;
+   
+}
+
+.bagianContentList{
+    display: flex;
+    margin-top: 20px;
+    
+    flex-wrap: wrap;
+    justify-content: space-between;
+  
+}
+@keyframes fadeSlideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .ContentListKiri .listResume:nth-child(1),
+.ListContentBagianKanan .listResume:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.ContentListKiri .listResume:nth-child(2),
+.ListContentBagianKanan .listResume:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.ContentListKiri .listResume:nth-child(3),
+.ListContentBagianKanan .listResume:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.ContentListKiri .listResume:nth-child(4),
+.ListContentBagianKanan .listResume:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+  .listResume {
+    animation: fadeSlideIn 0.6s ease both;
+  }
+
+.btnLihatSemua {
+    width: 300px;
+    height: 40px;
+    padding: 10px 20px;
+    background-color:#3674B5 ;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btnLihatSemua:hover {
+    background-color: #0056b3;
+  }
+  
+.bagianBottomHeader p{
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 18px;
+}
+
+.listResume{
+   
+    
+width: 500px;
+
+height: 300px;
+display: flex;
+
+}
+
+
+
+
+
+.bagianKanan h1{
+    text-align: start;
+    font-size: 20px;
+}
+.bagianKiriResume{
+    display: flex;
+    flex-direction: column;
+  
+    align-items: center;
+   
+    margin-right: 18px;
+}
+.kotak{
+    width: 40px;
+    margin-bottom: 10px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #3674B5;
+}
+.persegi{
+    width: 8px;
+    height: 220px;
+    background-color: #A8F366;
+    border-radius: 12px;
+}
+
+.bagianKanan{
+    width: 100%;
+}
+
+.bagianKanan h4{
+    font-size: 24px;
+    font-weight: 600;
+    color: black;
+}
+
+.bagianKanan p{
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(86, 86, 86);
+    text-align: start;
+}
+/* Tambahkan ini di akhir CSS kamu */
+@media (max-width: 768px) {
+    .bagianHeaderAbout {
+      padding: 20px;
+      height: auto;
+    }
+  
+    .bagianHeaderAbout h1 {
+      font-size: 28px;
+    }
+  
+    .bagianHeaderAbout p {
+      font-size: 16px;
+    }
+  
+    .ilHeaderAb {
+      width: 60%;
+      margin-left: 0;
+      height: 10px;
+    }
+  
+    .bagianTengahAbout {
+      flex-direction: column;
+      height: auto;
+      padding: 20px;
+    }
+  
+    .imgAbout {
+      width: 100%;
+      height: 250px;
+      margin-bottom: 20px;
+    }
+  
+    .bagianTextAbout {
+      width: 100%;
+      height: auto;
+    }
+  
+    .bagianTextAbout h2 {
+      font-size: 28px;
+    }
+  
+    .bagianTextAbout p {
+      font-size: 16px;
+    }
+  
+    .bagianListAbout {
+      flex-direction: column;
+      gap: 0;
+    }
+  
+    .isiListAbout {
+      flex: 1 1 100%;
+    }
+  
+    .isiListAbout h3 {
+      font-size: 16px;
+    }
+  
+    .iconList {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .bagianTextAbout h4 {
+      font-size: 16px;
+    }
+  
+    .bagianBottomHeader {
+      width: 100%;
+      padding: 20px;
+    }
+  
+    .bagianBottomHeader h1 {
+      font-size: 24px;
+    }
+  
+    .bagianBottomHeader p {
+      font-size: 16px;
+    }
+  
+    .il2about {
+      width: 50%;
+      height: 10px;
+    }
+  
+    .bagianContentList {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .ContentListKiri,
+    .ListContentBagianKanan {
+      width: 100%;
+    }
+  
+    .listResume {
+      width: 100%;
+      flex-direction: column;
+      height: auto;
+      padding: 10px 0;
+    }
+  
+    .bagianKiriResume {
+      flex-direction: column;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+  
+    .kotak {
+      width: 30px;
+      height: 30px;
+      margin: 0 10px;
+    }
+  
+    .persegi {
+      width: 6px;
+      height: 100px;
+    }
+  
+    .bagianKanan h1 {
+      font-size: 18px;
+    }
+  
+    .bagianKanan h4 {
+      font-size: 20px;
+    }
+  
+    .bagianKanan p {
+      font-size: 14px;
+    }
+  
+    .btnLihatSemua {
+      width: 80%;
+      font-size: 14px;
+    }
+  }
+  
