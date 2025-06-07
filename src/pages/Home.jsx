@@ -58,13 +58,13 @@ const Home = () => {
             <div className="isiListAbout">
               <div className="iconList"></div>
               <h3>
-                <span>Phone:</span> +62 812-3456-7890
+                <span>Phone:</span> 085951545918
               </h3>
             </div>
             <div className="isiListAbout">
               <div className="iconList"></div>
               <h3>
-                <span>Email:</span> arda@example.com
+                <span>Email:</span> ardyrkm23@gmail.com
               </h3>
             </div>
             <div className="isiListAbout">
@@ -82,13 +82,13 @@ const Home = () => {
             <div className="isiListAbout">
               <div className="iconList"></div>
               <h3>
-                <span>Github:</span> github.com/ardayudrik
+                <span>Github:</span> https://github.com/ardayrkmm
               </h3>
             </div>
             <div className="isiListAbout">
               <div className="iconList"></div>
               <h3>
-                <span>LinkedIn:</span> linkedin.com/in/arda
+                <span>LinkedIn:</span> https://www.linkedin.com/in/ardayudrik/
               </h3>
             </div>
           </div>
